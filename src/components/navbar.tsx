@@ -69,7 +69,9 @@ export default function Navbar() {
                 {link.name}
               </button>
             ))}
-            <Button>Resume</Button>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <Button>Resume</Button>
+            </a>
           </nav>
 
           {/* Mobile Navigation Toggle */}
@@ -98,7 +100,9 @@ export default function Navbar() {
                   {link.name}
                 </button>
               ))}
-              <Button className="w-full">Resume</Button>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <Button>Resume</Button>
+              </a>
             </nav>
           </div>
         </div>

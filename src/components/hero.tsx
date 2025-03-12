@@ -2,7 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github, Linkedin, Twitter } from "lucide-react";
+import {
+  ArrowRight,
+  Github,
+  Linkedin,
+  Twitter,
+  ArrowDownFromLine,
+  ArrowDownToLine,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -67,13 +74,12 @@ export default function Hero() {
                 View My Work
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                onClick={() => scrollToSection("contact")}
-              >
-                Contact Me
-              </Button>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" size="lg">
+                  Dowload CV
+                  <ArrowDownToLine />
+                </Button>
+              </a>
             </div>
 
             <div className="flex gap-4 mt-8">
@@ -130,7 +136,7 @@ export default function Hero() {
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full"></div>
             <div className="absolute inset-4 bg-muted rounded-full overflow-hidden">
-              <Image
+              <img
                 src="/img/placeholder.svg?height=400&width=400"
                 alt="MemoryLeaked"
                 className="w-full h-full object-cover"

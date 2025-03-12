@@ -203,7 +203,7 @@ export default function Projects() {
               >
                 <CardContent className="p-0">
                   <div className="relative overflow-hidden">
-                    <Image
+                    <img
                       src={
                         project.image ||
                         "/img/placeholder.svg?height=400&width=600"
